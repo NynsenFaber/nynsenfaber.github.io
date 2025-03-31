@@ -4,8 +4,6 @@ title: Research
 permalink: /research/
 ---
 
-# Research
-
 Here is a list of my publications:
 
 ## Conference Papers
