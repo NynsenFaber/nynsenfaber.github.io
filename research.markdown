@@ -15,9 +15,9 @@ Here is a list of my publications:
   *Fabrizio Boninsegna, Francesco Silvestri.* Proc. 25th Privacy Enhancing Technologies Symposium (PETS), 2025.
 
 - [Differentially Private High-Dimensional Approximate Range Counting, Revisited](https://arxiv.org/abs/2409.07187)  
-  *Martin Aumüller, Fabrizio Boninsegna, Francesco Silvestri.* FORC 2025.
+  *Martin Aumüller, Fabrizio Boninsegna, Francesco Silvestri.* Proc. of 6th annual Symposium on Foundations of Responsible Computing (FORC) 2025.
 
 - [Locality Sensitive Hashing of Trajectories Under Local Differential Privacy](https://ceur-ws.org/Vol-3478/paper56.pdf)
-  *Fabrizio Boninsegna* Proc. 31st Symposium on Advanced Database Systems (SEBD), 2023.
+  *Fabrizio Boninsegna* Proc. 31st Symposium on Advanced Database Systems (SEBD) 2023.
 
 
