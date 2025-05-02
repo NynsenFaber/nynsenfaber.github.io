@@ -8,7 +8,7 @@ Here is a list of my publications:
 
 ## Conference Papers
 
-- [Lightweight Protocols for Distributed Private Quantile Estimation](https://arxiv.org/abs/2502.02990)  
+- **🌟 Spotlight:** [Lightweight Protocols for Distributed Private Quantile Estimation](https://arxiv.org/abs/2502.02990)  
   *Anders Aamand, Fabrizio Boninsegna, Abigail Gentle, Jacob Imola, Rasmus Pagh.* Spotlight at ICML 2025.
 
 - [Differentially Private Release of Hierarchical Origin/Destination Data with a TopDown Approach](https://arxiv.org/abs/2412.09256)  
