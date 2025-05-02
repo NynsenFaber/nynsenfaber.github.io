@@ -20,6 +20,10 @@ probability and statistics, and randomized algorithms.
 Additionally, I collaborate with [Motion Analytica srl](https://www.motionanalytica.com/en/homepage-en/) on mobility research.
 I am interested in any research topic that regards trustworthy AI, and I am open to collaborations.
 
+In 2024 I had the opportunity to be a visiting PhD student at the IT University of Copenhagen, where I worked with Prof.
+Martin Aumüller, and be a part of the [Providentia project](https://www.rasmuspagh.net/providentia/) where I worked with
+[Prof. Rasmus Pagh](https://rasmuspagh.net).
+
 Prior to starting my PhD, I completed my studies in Theoretical Physics at the University of Padova.
 
 ## Hobbies
