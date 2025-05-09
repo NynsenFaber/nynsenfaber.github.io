@@ -9,7 +9,7 @@ Here is a list of my publications:
 ## Conference Papers
 
 - **🌟 Spotlight:** [Lightweight Protocols for Distributed Private Quantile Estimation](https://arxiv.org/abs/2502.02990)  
-  *Anders Aamand, Fabrizio Boninsegna, Abigail Gentle, Jacob Imola, Rasmus Pagh.* Spotlight at ICML 2025.
+  *Anders Aamand, Fabrizio Boninsegna, Abigail Gentle, Jacob Imola, Rasmus Pagh.* Spotlight at International Conference of Machine Learning (ICML) 2025.
 
 - [Differentially Private Release of Hierarchical Origin/Destination Data with a TopDown Approach](https://arxiv.org/abs/2412.09256)  
   *Fabrizio Boninsegna, Francesco Silvestri.* Proc. 25th Privacy Enhancing Technologies Symposium (PETS), 2025.
@@ -21,3 +21,7 @@ Here is a list of my publications:
   *Fabrizio Boninsegna* Proc. 31st Symposium on Advanced Database Systems (SEBD) 2023.
 
 
+## Workshop Papers
+
+- [InfTDA: a Simple TopDown Mechanism for Hierarchical Differentially Private Counting Queries](https://arxiv.org/abs/2505.05347)  
+  *Fabrizio Boninsegna* Workshop on Theory and Practice of Differential Privacy (TPDP) 2025.
