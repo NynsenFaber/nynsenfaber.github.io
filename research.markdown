@@ -25,6 +25,8 @@ Here is a list of my publications:
 
 - [InfTDA: a Simple TopDown Mechanism for Hierarchical Differentially Private Counting Queries](https://arxiv.org/abs/2505.05347)  
   *Fabrizio Boninsegna.* Workshop on Theory and Practice of Differential Privacy (TPDP) 2025.
+- [Private Quantile Estimation in the Two Server Model](documents/MPC.pdf)  
+  *Jacob Imola, Fabrizio Boninsegna, Hannah Keller, Anders Aamand, Amrita Roy Chowdhury, Rasmus Pagh.* Workshop on Theory and Practice of Differential Privacy (TPDP) 2025.
 
 ## Preprints
 
