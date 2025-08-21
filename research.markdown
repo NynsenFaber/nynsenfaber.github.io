@@ -32,3 +32,8 @@ Here is a list of my publications:
 
 - [Differentially Private Quantiles with Smaller Error](https://arxiv.org/abs/2505.13662)  
   *Jacob Imola, Fabrizio Boninsegna, Hannah Keller, Anders Aamand, Amrita Roy Chowdhury, Rasmus Pagh.* Preprint 2025.
+
+## Projects
+- [The Privacy Analysis of the Differential Private
+  Stochastic Gradient Descent](documents/The_Privacy_Analysis_of_the_Differential_Private_Stochastic_Gradient_Descent.pdf)
+  This is a project I did for a PhD course on *Information Theoretic Models in Security* at the University of Padova.
