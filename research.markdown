@@ -9,12 +9,13 @@ Here is a list of my publications:
 ## Conference Papers
 
 - **🌟 Spotlight:** [Lightweight Protocols for Distributed Private Quantile Estimation](https://arxiv.org/abs/2502.02990)\
-  *Anders Aamand, Fabrizio Boninsegna, Abigail Gentle, Jacob Imola, Rasmus Pagh.* Spotlight at International Conference on Machine Learning (ICML) 2025.
+  *Anders Aamand, Fabrizio Boninsegna, Abigail Gentle, Jacob Imola, Rasmus Pagh.* Spotlight at International Conference on Machine Learning (ICML) 2025.\
+  ▶️ Link to a short  [video presentation](https://icml.cc/virtual/2025/poster/43483).
 
-- [Differentially Private Release of Hierarchical Origin/Destination Data with a TopDown Approach](https://arxiv.org/abs/2412.09256)  
+- [Differentially Private Release of Hierarchical Origin/Destination Data with a TopDown Approach](https://petsymposium.org/popets/2025/popets-2025-0087.pdf)  
   *Fabrizio Boninsegna, Francesco Silvestri.* Proc. 25th Privacy Enhancing Technologies Symposium (PETS), 2025.
 
-- [Differentially Private High-Dimensional Approximate Range Counting, Revisited](https://arxiv.org/abs/2409.07187)  
+- [Differentially Private High-Dimensional Approximate Range Counting, Revisited](https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.FORC.2025.15)  
   *Martin Aumüller, Fabrizio Boninsegna, Francesco Silvestri.* Proc. of 6th annual Symposium on Foundations of Responsible Computing (FORC) 2025.
 
 - [Locality Sensitive Hashing of Trajectories Under Local Differential Privacy](https://ceur-ws.org/Vol-3478/paper56.pdf)\
