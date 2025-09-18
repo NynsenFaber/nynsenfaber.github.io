@@ -8,6 +8,10 @@ Here is a list of my publications:
 
 ## Conference Papers
 
+- *Differentially Private Quantiles with Smaller Error*\
+  Jacob Imola, Fabrizio Boninsegna, Hannah Keller, Anders Aamand, Amrita Roy Chowdhury, Rasmus Pagh. Neural Information Processing Systems (NeurIPS) 2025.\
+  [📄](https://arxiv.org/abs/2505.13662) [<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="26" height="26" alt="GitHub"/>](https://github.com/NynsenFaber/DP_CC_quantiles)
+
 - **🌟 Spotlight:** *Lightweight Protocols for Distributed Private Quantile Estimation*\
   Anders Aamand, Fabrizio Boninsegna, Abigail Gentle, Jacob Imola, Rasmus Pagh. Spotlight at International Conference on Machine Learning (ICML) 2025.\
   [📄](https://arxiv.org/abs/2502.02990) [<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="26" height="26" alt="GitHub"/>](https://github.com/NynsenFaber/Quantile_estimation_with_adaptive_LDP) [🎥](https://icml.cc/virtual/2025/poster/43483)
@@ -26,7 +30,7 @@ Here is a list of my publications:
 
 - *Locality Sensitive Hashing of Trajectories Under Local Differential Privacy*\
   Fabrizio Boninsegna. Proc. 31st Symposium on Advanced Database Systems (SEBD) 2023.\
-[📄](https://ceur-ws.org/Vol-3478/paper56.pdf)
+  [📄](https://ceur-ws.org/Vol-3478/paper56.pdf)
 
 
 ## Workshop Papers
@@ -37,12 +41,6 @@ Here is a list of my publications:
 - *Private Quantile Estimation in the Two Server Model*\
   Jacob Imola, Fabrizio Boninsegna, Hannah Keller, Anders Aamand, Amrita Roy Chowdhury, Rasmus Pagh. Workshop on Theory and Practice of Differential Privacy (TPDP) 2025.\
   [📄](documents/MPC.pdf)
-
-## Preprints
-
-- *Differentially Private Quantiles with Smaller Error*\
-  Jacob Imola, Fabrizio Boninsegna, Hannah Keller, Anders Aamand, Amrita Roy Chowdhury, Rasmus Pagh. Preprint 2025.\
-  [📄](https://arxiv.org/abs/2505.13662) [<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="26" height="26" alt="GitHub"/>](https://github.com/NynsenFaber/DP_CC_quantiles)
 
 ## Projects
 - *The Privacy Analysis of the Differential Private Stochastic Gradient Descent*\
