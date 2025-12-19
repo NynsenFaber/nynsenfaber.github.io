@@ -12,26 +12,39 @@ layout: home
 
 ## About Me
 
-Hi! I am a PhD student in Computer Science at the University of Padova,
-working under the supervision of [Prof. Francesco Silvestri](https://www.dei.unipd.it/~silvestri/index.html)
-and co-supervised by [Prof. Martin Aumüller](https://itu.dk/~maau/).
-My research spans both theoretical and applied domains, with a focus on differential privacy,
-probability and statistics, and randomized algorithms.
-Additionally, I collaborate with [Motion Analytica srl](https://www.motionanalytica.com/en/homepage-en/) on mobility research.
-I am interested in any research topic that regards trustworthy AI, and I am open to collaborations.
+Hi! I am a **PhD Candidate** in Computer Science at the University of Padova. I have recently completed my doctoral research and am currently **awaiting my thesis defense**. 
 
-In 2024 I had the opportunity to be a visiting PhD student at the IT University of Copenhagen, where I worked with Prof.
-Martin Aumüller, and be a part of the [Providentia project](https://www.rasmuspagh.net/providentia/) where I worked with
-[Prof. Rasmus Pagh](https://rasmuspagh.net).
+My work is supervised by [Prof. Francesco Silvestri](https://www.dei.unipd.it/~silvestri/index.html) and co-supervised by [Prof. Martin Aumüller](https://itu.dk/~maau/). My research spans both theoretical and applied domains, with a core focus on **Trustworthy AI and Machine Learning**.
 
-Prior to starting my PhD, I completed my studies in Theoretical Physics at the University of Padova.
+> 🚀 **On the Job Market:** Having completed my doctoral studies, I am now seeking opportunities in Research or Applied Science starting in 2025.
 
-## Hobbies
-In my spare time, I enjoy hiking, calisthenics, and playing music.
+### Research Interests
+* **Differential Privacy** (Privacy-preserving data analysis)
+* **Randomized Algorithms** & Data Structures
+* **Probability and Statistics**
+* **Deep Learning**
+* **Mobility Data Science**
 
-- I am a hiking guide assistant for [The South Adventure](https://www.thesouthadventures.com)
-- I play bass, guitar, and a bit of piano.  I was part of a band and contributed to publishing an album titled [L'assenzio](https://open.spotify.com/track/5JHud3qLhBnuEdVKlqzcY3).
-- I was used to compose music, maybe in the future I will do it again. Here some of my songs [SoundCloud](https://soundcloud.com/user-373535867).
+---
+
+### Academic & Professional Experience
+
+* **Research Background:** Prior to my PhD, I completed my studies in **Theoretical Physics** at the University of Padova, which provides the mathematical foundation for my current work in randomized algorithms.
+* **Visiting Research:** In 2024, I was a visiting PhD student at the **IT University of Copenhagen**, working with [Prof. Rasmus Pagh](https://rasmuspagh.net) as part of the [Providentia project](https://www.rasmuspagh.net/providentia/).
+* **Industry Collaboration:** I collaborate with [Motion Analytica srl](https://www.motionanalytica.com/en/homepage-en/) on mobility research. Our collaborative work was recently published in a peer-reviewed journal, bridging the gap between theory and real-world mobility applications.
+
+---
+
+## Beyond the Lab
+
+In my spare time, I prioritize staying active and creative:
+
+* **Hiking:** I am a hiking guide assistant for [The South Adventure](https://www.thesouthadventures.com).
+* **Music:** I play bass, guitar, and a bit of piano. I was previously part of a band and contributed to the album **[L'assenzio](https://open.spotify.com)** (Spotify).
+* **Composition:** I enjoy writing and producing music; you can listen to some of my tracks on [SoundCloud](https://soundcloud.com/user-373535867).
+* **Fitness:** I am a long-time practitioner of calisthenics.
+
+---
 
 ## CV
 [Download My CV](documents/CV.pdf)

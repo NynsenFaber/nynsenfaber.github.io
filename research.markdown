@@ -24,14 +24,16 @@ Here is a list of my publications:
   Martin Aumüller, Fabrizio Boninsegna, Francesco Silvestri. Proc. of 6th annual Symposium on Foundations of Responsible Computing (FORC) 2025.\
   [📄](https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.FORC.2025.15)
 
-- *Towards a fair and comprehensive evaluation of Walkable Accessibility and Attractivity in the 15-minutes city scenario based on demographic data*\
-  Fabrizio Boninsegna, Alessandro Nalin, Andrea Simone, Bruno Zamengo, Denis Cappellari, Francesco Silvestri. Proc. 27th International Conference Living and Walking in Cities (LWC) 2025.\
-  [📄](../documents/250915_paper_WATERMARK.pdf)
-
 - *Locality Sensitive Hashing of Trajectories Under Local Differential Privacy*\
   Fabrizio Boninsegna. Proc. 31st Symposium on Advanced Database Systems (SEBD) 2023.\
   [📄](https://ceur-ws.org/Vol-3478/paper56.pdf)
 
+
+## Journal Papers
+
+- *Towards a Fair and Comprehensive Evaluation of Walkable Accessibility and Attractivity in the 15 Min City Scenario Based on Demographic Data*\
+  Fabrizio Boninsegna, Alessandro Nalin, Andrea Simone, Bruno Zamengo, Denis Cappellari, Francesco Silvestri. Infrasrtucture 2026
+  [📄](https://www.mdpi.com/2412-3811/11/1/4)
 
 ## Workshop Papers
 
