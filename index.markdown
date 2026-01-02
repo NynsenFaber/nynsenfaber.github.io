@@ -14,7 +14,7 @@ layout: home
 
 Hi! I am a **PhD Candidate** in Computer Science at the University of Padova. I have recently completed my doctoral research and am currently awaiting my thesis defense. 
 
-My work is supervised by [Prof. Francesco Silvestri](https://www.dei.unipd.it/~silvestri/index.html) and co-supervised by [Prof. Martin Aumüller](https://itu.dk/~maau/). My research spans both theoretical and applied domains, with a core focus on **Differential Privacy** and **Data Srtuctures** for high dimensional data.
+My work is supervised by [Prof. Francesco Silvestri](https://www.dei.unipd.it/~silvestri/index.html) and co-supervised by [Prof. Martin Aumüller](https://itu.dk/~maau/). My research spans both theoretical and applied domains, with a core focus on **Differential Privacy** and **Data Structures** for high dimensional data.
 
 > 🚀 **On the Job Market:** Having completed my doctoral studies, I am now seeking opportunities in Research or Applied Science starting in 2026.
 
