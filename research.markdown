@@ -8,6 +8,10 @@ Here is a list of my publications:
 
 ## Conference Papers
 
+- *Piquantε: Private Quantile Estimation in the Two-Server Model*\
+   Hannah Keller, Jacob Imola, Fabrizio Boninsegna, Rasmus Pagh, Amrita Roy Chowdhury. Conference on Computer and Communications Security (CCS), 2026
+   [📄](https://arxiv.org/abs/2509.14035)
+
 - *Differentially Private Quantiles with Smaller Error*\
   Jacob Imola, Fabrizio Boninsegna, Hannah Keller, Anders Aamand, Amrita Roy Chowdhury, Rasmus Pagh. Neural Information Processing Systems (NeurIPS) 2025.\
   [📄](https://arxiv.org/abs/2505.13662) [<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="26" height="26" alt="GitHub"/>](https://github.com/NynsenFaber/DP_CC_quantiles)
@@ -43,12 +47,6 @@ Here is a list of my publications:
 - *Private Quantile Estimation in the Two Server Model*\
   Jacob Imola, Fabrizio Boninsegna, Hannah Keller, Anders Aamand, Amrita Roy Chowdhury, Rasmus Pagh. Workshop on Theory and Practice of Differential Privacy (TPDP) 2025.\
   [📄](documents/MPC.pdf)
-
-## Preprints
-
-- *Piquantε: Private Quantile Estimation in the Two-Server Model*\
-   Hannah Keller, Jacob Imola, Fabrizio Boninsegna, Rasmus Pagh, Amrita Roy Chowdhury\
-   [📄](https://arxiv.org/abs/2509.14035)
 
 ## Projects
 - *The Privacy Analysis of the Differential Private Stochastic Gradient Descent*\
