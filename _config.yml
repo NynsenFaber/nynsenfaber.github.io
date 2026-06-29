@@ -53,5 +53,9 @@ plugins:
 #   - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/
-#   - vendor/gems/
+#   - vendors/gems/
 #   - vendor/ruby/
+
+# for the math engine
+kramdown:
+  math_engine: mathjax

@@ -6,10 +6,14 @@ permalink: /research/
 
 Here is a list of my publications:
 
+## PhD Thesis in Information Engineer
+- *Differentially Private Methods for Data Release, Similarity Search and Quantile Estimation*, Fabrizio Boninsegna, 2026\
+[📄](https://www.research.unipd.it/bitstream/11577/3583528/2/thesis_Fabrizio_Boninsegna.pdf)
+
 ## Conference Papers
 
 - *Piquantε: Private Quantile Estimation in the Two-Server Model*\
-   Hannah Keller, Jacob Imola, Fabrizio Boninsegna, Rasmus Pagh, Amrita Roy Chowdhury. Conference on Computer and Communications Security (CCS), 2026
+   Hannah Keller, Jacob Imola, Fabrizio Boninsegna, Rasmus Pagh, Amrita Roy Chowdhury. Conference on Computer and Communications Security (CCS), 2026\
    [📄](https://arxiv.org/abs/2509.14035)
 
 - *Differentially Private Quantiles with Smaller Error*\
@@ -36,7 +40,7 @@ Here is a list of my publications:
 ## Journal Papers
 
 - *Towards a Fair and Comprehensive Evaluation of Walkable Accessibility and Attractivity in the 15 Min City Scenario Based on Demographic Data*\
-  Fabrizio Boninsegna, Alessandro Nalin, Andrea Simone, Bruno Zamengo, Denis Cappellari, Francesco Silvestri. Infrasrtucture 2026
+  Fabrizio Boninsegna, Alessandro Nalin, Andrea Simone, Bruno Zamengo, Denis Cappellari, Francesco Silvestri. Infrastructure 2026\
   [📄](https://www.mdpi.com/2412-3811/11/1/4)
 
 ## Workshop Papers
@@ -52,3 +56,11 @@ Here is a list of my publications:
 - *The Privacy Analysis of the Differential Private Stochastic Gradient Descent*\
   This is a project I did for a PhD course on Information Theoretic Models in Security at the University of Padova.\
   [📄](../documents/The_Privacy_Analysis_of_the_Differential_Private_Stochastic_Gradient_Descent.pdf)
+
+## MSc Thesis in Theoretical Physics
+- *Problems of Ranking and Dynamics of Complex Bipartite Networks*, Fabrizio Boninsegna, 2022\
+[📄](https://thesis.unipd.it/handle/20.500.12608/28558)
+
+## BSc Thesis in Physics
+- *Solitoni in Fluidi Classici e Quantistici*, Fabrizio Boninsegna, 2019\
+[📄](https://thesis.unipd.it/handle/20.500.12608/24278)
