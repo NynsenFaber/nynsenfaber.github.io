@@ -1,0 +1,35 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+/**
+ * Prevent long unbreakable content (MathJax equations, long inline code,
+ * long URLs) from widening the page and causing horizontal scroll on
+ * narrow / mobile viewports. The offending element scrolls internally
+ * instead of dragging the whole layout sideways.
+ */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+// MathJax 2.7.x CommonHTML output wraps display equations in
+// `span.mjx-chtml.MJXc-display`. It has no intrinsic width limit, so a
+// wide equation stretches past the wrapper unless capped here. Scoped
+// under .wrapper so this selector outranks MathJax's own injected
+// `.mjx-chtml { max-width: none }` rule (same specificity, but MathJax's
+// <style> is appended after ours, so it would otherwise win the cascade).
+.wrapper .MJXc-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+}
+
+table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
