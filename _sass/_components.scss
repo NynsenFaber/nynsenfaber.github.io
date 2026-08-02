@@ -240,12 +240,12 @@
 
   .hero__figure {
     order: -1;
-    max-width: 12.5rem;
+    max-width: none;
     margin-inline: 0;
   }
 
-  .hero__photo { aspect-ratio: 1 / 1; }
-  .hero__figure figcaption { text-align: left; }
+  .hero__photo { max-width: 100%; }
+  .hero__figure figcaption { text-align: center; }
 }
 
 // --- Publications -----------------------------------------------------------
