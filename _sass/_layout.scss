@@ -1,0 +1,259 @@
+// ---------------------------------------------------------------------------
+// Page scaffolding: wrapper, header, sections, footer
+// ---------------------------------------------------------------------------
+
+.wrap {
+  width: 100%;
+  max-width: var(--measure);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.wrap--wide { max-width: var(--measure-wide); }
+
+.site-main { display: block; }
+
+// --- Header -----------------------------------------------------------------
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: saturate(1.6) blur(12px);
+  -webkit-backdrop-filter: saturate(1.6) blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+// color-mix is widely supported, but keep a solid background as the fallback.
+@supports not (background: color-mix(in srgb, red 50%, blue)) {
+  .site-header { background: var(--bg); }
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 3.85rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 620;
+  letter-spacing: -0.015em;
+
+  &:hover { color: var(--text); }
+  &:hover .brand__mark {
+    background: var(--accent);
+    color: var(--accent-on);
+    border-color: var(--accent);
+    transform: rotate(-4deg);
+  }
+}
+
+.brand__mark {
+  display: grid;
+  place-items: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--bg-elev);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  transition: background-color var(--dur) var(--ease),
+              color var(--dur) var(--ease),
+              border-color var(--dur) var(--ease),
+              transform var(--dur) var(--ease);
+}
+
+.brand__name { font-size: 0.95rem; }
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.site-nav__link {
+  position: relative;
+  padding: 0.45rem 0.7rem;
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  font-size: 0.925rem;
+  font-weight: 520;
+  text-decoration: none;
+  transition: color var(--dur) var(--ease), background-color var(--dur) var(--ease);
+
+  // Underline grows from the centre on hover; sits full width when active.
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0.7rem;
+    right: 0.7rem;
+    bottom: 0.22rem;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--accent);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform var(--dur) var(--ease);
+  }
+
+  &:hover {
+    color: var(--text);
+    background: var(--accent-soft);
+    &::after { transform: scaleX(1); }
+  }
+
+  &.is-active {
+    color: var(--text);
+    font-weight: 600;
+    &::after { transform: scaleX(1); }
+  }
+}
+
+.theme-toggle {
+  display: grid;
+  place-items: center;
+  width: 2.15rem;
+  height: 2.15rem;
+  margin-left: 0.35rem;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--bg-elev);
+  color: var(--text-muted);
+  transition: color var(--dur) var(--ease), border-color var(--dur) var(--ease),
+              transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+
+  .icon { width: 1rem; height: 1rem; }
+
+  &:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    transform: rotate(25deg) scale(1.06);
+    box-shadow: var(--shadow-sm);
+  }
+
+  &:active { transform: rotate(25deg) scale(0.96); }
+}
+
+// Show whichever icon represents the theme you would switch *to*.
+.theme-toggle .icon-sun  { display: none; }
+.theme-toggle .icon-moon { display: block; }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    .theme-toggle .icon-sun  { display: block; }
+    .theme-toggle .icon-moon { display: none; }
+  }
+}
+
+:root[data-theme="dark"] {
+  .theme-toggle .icon-sun  { display: block; }
+  .theme-toggle .icon-moon { display: none; }
+}
+
+:root[data-theme="light"] {
+  .theme-toggle .icon-sun  { display: none; }
+  .theme-toggle .icon-moon { display: block; }
+}
+
+@media (max-width: 30rem) {
+  .brand__name { display: none; }
+  .site-nav__link { padding-inline: 0.5rem; font-size: 0.9rem; }
+}
+
+// --- Sections ---------------------------------------------------------------
+
+.section {
+  padding-block: clamp(2.75rem, 6vw, 4.5rem);
+  border-top: 1px solid var(--border);
+}
+
+.section--tint { background: var(--bg-tint); }
+
+.section__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.75rem;
+}
+
+.section__title {
+  font-size: var(--step-2);
+
+  // Small rust rule above the heading — the one recurring flourish.
+  &::before {
+    content: "";
+    display: block;
+    width: 2.2rem;
+    height: 3px;
+    margin-bottom: 0.85rem;
+    border-radius: 3px;
+    background: var(--accent);
+  }
+}
+
+// --- Page heads -------------------------------------------------------------
+
+.page-head {
+  padding-block: clamp(2.25rem, 5vw, 3.5rem) 1.75rem;
+}
+
+.page-title {
+  font-size: var(--step-3);
+  margin-bottom: 0.6rem;
+}
+
+.page-subtitle {
+  color: var(--text-muted);
+  font-size: var(--step-1);
+  line-height: 1.5;
+  max-width: 38rem;
+}
+
+// --- Footer -----------------------------------------------------------------
+
+.site-footer {
+  margin-top: clamp(3rem, 8vw, 5rem);
+  border-top: 1px solid var(--border);
+  background: var(--bg-tint);
+  padding-block: 2.5rem;
+}
+
+.site-footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.site-footer__name {
+  font-weight: 620;
+  letter-spacing: -0.015em;
+}
+
+.site-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem 0.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.site-footer__meta {
+  color: var(--text-faint);
+  font-size: var(--step--1);
+}

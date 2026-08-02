@@ -1,25 +1,22 @@
 ---
+layout: default
+title: Page not found
 permalink: /404.html
-layout: page
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
+<div class="wrap notfound">
   <h1>404</h1>
+  <p>That page does not exist — or it moved when the site was rebuilt.</p>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  <div class="hero__actions" style="justify-content: center;">
+    <a class="btn btn--primary" href="{{ '/' | relative_url }}">
+      {% include icon.html name="home" %}<span>Home</span>
+    </a>
+    <a class="btn" href="{{ '/research/' | relative_url }}">
+      {% include icon.html name="paper" %}<span>Research</span>
+    </a>
+    <a class="btn" href="{{ '/blog/' | relative_url }}">
+      {% include icon.html name="document" %}<span>Blog</span>
+    </a>
+  </div>
 </div>

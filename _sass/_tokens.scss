@@ -1,0 +1,94 @@
+// ---------------------------------------------------------------------------
+// Design tokens
+//
+// Light is the default. Dark is applied twice: once for readers whose OS asks
+// for it (unless they explicitly picked light), and once for readers who hit
+// the toggle. Keeping it in a mixin means the two paths can never drift apart.
+// ---------------------------------------------------------------------------
+
+@mixin light-tokens {
+  color-scheme: light;
+
+  --bg:            #fcfbf9;
+  --bg-elev:       #ffffff;
+  --bg-tint:       #f6f3ee;
+  --bg-code:       #f3efe8;
+
+  --text:          #1c1b18;
+  --text-muted:    #66615a;
+  --text-faint:    #8b857b;
+
+  --border:        #e5e0d6;
+  --border-strong: #d2cabc;
+
+  --accent:        #b4491e;
+  --accent-hover:  #92380f;
+  --accent-soft:   rgba(180, 73, 30, 0.08);
+  --accent-ring:   rgba(180, 73, 30, 0.30);
+  --accent-on:     #ffffff;
+
+  --shadow-sm:     0 1px 2px rgba(28, 27, 24, 0.05);
+  --shadow-md:     0 8px 24px -10px rgba(28, 27, 24, 0.22);
+  --shadow-lg:     0 16px 40px -16px rgba(28, 27, 24, 0.28);
+}
+
+@mixin dark-tokens {
+  color-scheme: dark;
+
+  --bg:            #141311;
+  --bg-elev:       #1c1b18;
+  --bg-tint:       #1a1917;
+  --bg-code:       #23211d;
+
+  --text:          #eeeae3;
+  --text-muted:    #a49d92;
+  --text-faint:    #837c72;
+
+  --border:        #2e2b26;
+  --border-strong: #423e37;
+
+  --accent:        #e8845c;
+  --accent-hover:  #f4a082;
+  --accent-soft:   rgba(232, 132, 92, 0.12);
+  --accent-ring:   rgba(232, 132, 92, 0.38);
+  --accent-on:     #1a1005;
+
+  --shadow-sm:     0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md:     0 8px 24px -10px rgba(0, 0, 0, 0.6);
+  --shadow-lg:     0 16px 40px -16px rgba(0, 0, 0, 0.7);
+}
+
+:root {
+  @include light-tokens;
+
+  --font-sans: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto,
+               "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+               "Liberation Mono", monospace;
+
+  // Fluid type: comfortable on a phone, never oversized on a desktop.
+  --step--1: clamp(0.82rem, 0.79rem + 0.14vw, 0.89rem);
+  --step-0:  clamp(1rem, 0.97rem + 0.16vw, 1.09rem);
+  --step-1:  clamp(1.16rem, 1.09rem + 0.32vw, 1.35rem);
+  --step-2:  clamp(1.38rem, 1.24rem + 0.62vw, 1.75rem);
+  --step-3:  clamp(1.72rem, 1.44rem + 1.24vw, 2.45rem);
+  --step-4:  clamp(2.1rem, 1.6rem + 2.2vw, 3.3rem);
+
+  --measure: 44rem;   // reading column
+  --measure-wide: 62rem;
+  --gutter: clamp(1.15rem, 4vw, 2.25rem);
+
+  --radius-sm: 0.45rem;
+  --radius:    0.7rem;
+  --radius-lg: 1.1rem;
+
+  --ease: cubic-bezier(0.22, 0.75, 0.35, 1);
+  --dur: 0.19s;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { @include dark-tokens; }
+}
+
+:root[data-theme="dark"]  { @include dark-tokens; }
+:root[data-theme="light"] { @include light-tokens; }

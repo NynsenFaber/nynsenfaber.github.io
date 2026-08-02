@@ -1,0 +1,59 @@
+---
+layout: default
+title: Research
+subtitle: >-
+  Differential privacy, randomized data structures and high-dimensional search.
+  Every entry links straight to the paper, and to the code where there is code.
+permalink: /research/
+---
+
+{%- assign pubs = site.data.publications -%}
+{%- assign featured = pubs | where: "featured", true -%}
+
+<div class="wrap wrap--wide">
+  <header class="page-head">
+    <h1 class="page-title">{{ page.title }}</h1>
+    <p class="page-subtitle">{{ page.subtitle }}</p>
+  </header>
+
+  {%- if featured.size > 0 %}
+    <section class="pub-group">
+      <h2 class="pub-group__title">
+        Selected
+        <span class="pub-group__count">{{ featured.size }}</span>
+      </h2>
+      <div class="pub-grid">
+        {%- for pub in featured -%}
+          {% include publication.html pub=pub %}
+        {%- endfor -%}
+      </div>
+    </section>
+  {%- endif -%}
+
+  {%- comment -%}
+    Group order and headings. Anything added to _data/publications.yml with one
+    of these `type` values lands in the right place automatically.
+  {%- endcomment -%}
+  {%- assign groups = "conference|Conference papers,journal|Journal papers,workshop|Workshop papers,project|Projects,thesis|Theses" | split: "," -%}
+
+  {%- for group in groups -%}
+    {%- assign parts = group | split: "|" -%}
+    {%- assign type = parts[0] -%}
+    {%- assign heading = parts[1] -%}
+    {%- assign items = pubs | where: "type", type -%}
+
+    {%- if items.size > 0 %}
+      <section class="pub-group">
+        <h2 class="pub-group__title">
+          {{ heading }}
+          <span class="pub-group__count">{{ items.size }}</span>
+        </h2>
+        <ul class="pub-list">
+          {%- for pub in items -%}
+            <li>{% include publication.html pub=pub plain=true %}</li>
+          {%- endfor -%}
+        </ul>
+      </section>
+    {%- endif -%}
+  {%- endfor -%}
+</div>

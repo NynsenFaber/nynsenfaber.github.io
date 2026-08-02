@@ -1,61 +1,99 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
+# ---------------------------------------------------------------------------
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
+# ---------------------------------------------------------------------------
 title: Fabrizio Boninsegna
-author: Fabrizio Boninsegna
 email: fabrizio.boninsegna@outlook.it
-description: >- # this means to ignore newlines until "baseurl:"
-  Fabrizio Boninsegna's personal website.
+description: >-
+  Fabrizio Boninsegna — PhD in Computer Science (University of Padova).
+  Differential privacy, randomized algorithms and data structures for
+  high-dimensional data.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://nynsenfaber.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
-github_username:  NynsenFaber
-linkedin_username:  fabrizio-boninsegna
+url: "https://nynsenfaber.github.io" # the base hostname & protocol for your site
+lang: en
+timezone: Europe/Oslo
 
+# ---------------------------------------------------------------------------
+# Profile — drives the home page hero. Edit here, not in the layout.
+# ---------------------------------------------------------------------------
+profile:
+  name: Fabrizio Boninsegna
+  headline: PhD in Computer Science
+  affiliation: AIoT Researcher at Havguard AS
+  location: Oslo, Norway
+  photo: /images/photos/me_montagna.JPG
+  photo_alt: Fabrizio Boninsegna hiking in the Dolomites
+  photo_caption: In the Dolomites, my home.
+  bio: >-
+    I am specialized in **differential privacy** and **data structures for
+    high-dimensional data**, with state of the art contribution to quantile estimation, private release of hierarchical 
+    data and approximate nearest neighbour search. I did my PhD at the University of
+    Padova with [Francesco Silvestri](https://www.dei.unipd.it/~silvestri/index.html)
+    and [Martin Aumüller](https://itu.dk/~maau/), after an MSc in Theoretical
+    Physics. I have a genuine interest for the current trends in AI and data science, espeically if there is an underlying fascinating mathematical theory.
+    These days I am in Oslo, designing, building and embedding AI algorithm into autonomous systems.
+
+# ---------------------------------------------------------------------------
+# Primary contact / profile links — rendered as the hero button row.
+# `icon` must match a name handled by _includes/icon.htmls
+# ---------------------------------------------------------------------------
+links:
+  - label: Curriculum Vitae
+    short: CV
+    url: /documents/CV.pdf
+    icon: document
+    primary: true
+  - label: Email
+    short: Email
+    url: mailto:fabrizio.boninsegna@outlook.it
+    icon: mail
+  - label: GitHub
+    short: GitHub
+    url: https://github.com/NynsenFaber
+    icon: github
+  - label: LinkedIn
+    short: LinkedIn
+    url: https://www.linkedin.com/in/fabrizio-boninsegna
+    icon: linkedin
+
+# ---------------------------------------------------------------------------
+# Navigation
+# ---------------------------------------------------------------------------
+nav:
+  - title: Home
+    url: /
+  - title: Research
+    url: /research/
+  - title: Blog
+    url: /blog/
+
+# ---------------------------------------------------------------------------
 # Build settings
-theme: minima
+# ---------------------------------------------------------------------------
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendors/gems/
-#   - vendor/ruby/
+sass:
+  style: compressed
+  sass_dir: _sass
 
-# for the math engine
+# Emits `\(...\)` / `\[...\]` delimiters, which KaTeX renders client-side.
 kramdown:
   math_engine: mathjax
+  syntax_highlighter: rouge
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - INSTRUCTION.md
+  - README.md
+  - vendor
+  - .idea

@@ -1,0 +1,46 @@
+---
+layout: default
+---
+<article class="wrap wrap--wide post">
+  <header class="page-head">
+    <p class="post__date">
+      <a class="back-link" href="{{ '/blog/' | relative_url }}">
+        {% include icon.html name="arrow" %}<span>All posts</span>
+      </a>
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %B %Y" }}</time>
+    </p>
+
+    <h1 class="page-title">{{ page.title }}</h1>
+
+    {%- if page.summary %}
+      <p class="page-subtitle">{{ page.summary }}</p>
+    {%- endif -%}
+
+    {%- if page.tags and page.tags.size > 0 %}
+      <ul class="tag-list">
+        {%- for tag in page.tags -%}
+          <li class="tag">{{ tag }}</li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+  </header>
+
+  <div class="prose">
+    {{ content }}
+  </div>
+
+  <nav class="post-nav" aria-label="More posts">
+    {%- if page.previous %}
+      <a class="post-nav__item" href="{{ page.previous.url | relative_url }}">
+        <span class="post-nav__label">Previous</span>
+        <span class="post-nav__title">{{ page.previous.title }}</span>
+      </a>
+    {%- endif -%}
+    {%- if page.next %}
+      <a class="post-nav__item post-nav__item--next" href="{{ page.next.url | relative_url }}">
+        <span class="post-nav__label">Next</span>
+        <span class="post-nav__title">{{ page.next.title }}</span>
+      </a>
+    {%- endif -%}
+  </nav>
+</article>

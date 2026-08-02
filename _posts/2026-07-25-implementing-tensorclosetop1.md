@@ -6,10 +6,6 @@ tags: [differential-privacy, nearest-neighbours, rust, llm]
 summary: "TensorCloseTop-1 existed only as a proof. Now it runs. Here is what the theory got right, what it quietly hid, and what it was like to build with an LLM."
 ---
 
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
 There is a particular kind of guilt that comes with proving a theorem about a data
 structure you have never built. You know the guarantees hold. You have checked the
 constants. And still, somewhere in the back of your head, a voice asks: *but does it

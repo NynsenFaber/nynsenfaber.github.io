@@ -1,0 +1,92 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="wrap hero__inner">
+    <div class="hero__text">
+      <p class="hero__eyebrow">{{ site.profile.headline }}</p>
+      <h1 class="hero__name">{{ site.profile.name }}</h1>
+      <p class="hero__role">
+        {{ site.profile.affiliation }} <span class="dot">·</span> {{ site.profile.location }}
+      </p>
+
+      <div class="hero__bio">{{ site.profile.bio | markdownify }}</div>
+
+      <div class="hero__actions">
+        {%- for link in site.links -%}
+          <a class="btn{% if link.primary %} btn--primary{% endif %}"
+             href="{{ link.url | relative_url }}"
+             {% unless link.url contains 'mailto:' or link.url contains '/documents/' %}target="_blank" rel="noopener"{% endunless %}>
+            {% include icon.html name=link.icon %}
+            <span>{{ link.short }}</span>
+          </a>
+        {%- endfor -%}
+      </div>
+    </div>
+
+    <figure class="hero__figure">
+      <img class="hero__photo" src="{{ site.profile.photo | relative_url }}"
+           alt="{{ site.profile.photo_alt }}" width="440" height="550" loading="eager" decoding="async">
+      <figcaption>{{ site.profile.photo_caption }}</figcaption>
+    </figure>
+  </div>
+</section>
+
+{%- assign featured = site.data.publications | where: "featured", true -%}
+{%- if featured.size > 0 %}
+<section class="section section--tint">
+  <div class="wrap wrap--wide">
+    <div class="section__head">
+      <h2 class="section__title">Selected work</h2>
+      <a class="text-link" href="{{ '/research/' | relative_url }}">
+        <span>All publications</span>{% include icon.html name="arrow" %}
+      </a>
+    </div>
+
+    <div class="pub-grid">
+      {%- for pub in featured -%}
+        {% include publication.html pub=pub %}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+{%- endif -%}
+
+<section class="section">
+  <div class="wrap wrap--wide">
+    <div class="prose">
+      {{ content }}
+    </div>
+  </div>
+</section>
+
+{%- assign recent = site.posts | slice: 0, 3 -%}
+{%- if recent.size > 0 %}
+<section class="section section--tint">
+  <div class="wrap wrap--wide">
+    <div class="section__head">
+      <h2 class="section__title">From the blog</h2>
+      <a class="text-link" href="{{ '/blog/' | relative_url }}">
+        <span>All posts</span>{% include icon.html name="arrow" %}
+      </a>
+    </div>
+
+    <ul class="post-list">
+      {%- for post in recent -%}
+        <li class="post-card">
+          <a class="post-card__link" href="{{ post.url | relative_url }}">
+            <time class="post-card__date" datetime="{{ post.date | date_to_xmlschema }}">
+              {{ post.date | date: "%d %b %Y" }}
+            </time>
+            <h3 class="post-card__title">{{ post.title }}</h3>
+            {%- if post.summary %}
+              <p class="post-card__summary">{{ post.summary }}</p>
+            {%- endif -%}
+            <span class="post-card__more">Read{% include icon.html name="arrow" %}</span>
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</section>
+{%- endif -%}

@@ -1,0 +1,40 @@
+{%- comment -%}
+  Renders one entry from _data/publications.yml.
+    include.pub    the publication
+    include.plain  suppress the highlighted treatment, so a paper shown in the
+                   "Selected" strip does not shout twice on the same page
+{%- endcomment -%}
+{%- assign pub = include.pub -%}
+{%- assign highlight = false -%}
+{%- if pub.featured and include.plain != true -%}{%- assign highlight = true -%}{%- endif -%}
+{%- assign byline = pub.authors | replace: 'Fabrizio Boninsegna', '<b>Fabrizio Boninsegna</b>' -%}
+
+<article class="pub{% if highlight %} pub--featured{% endif %}">
+  <div class="pub__meta">
+    <span class="badge badge--venue" title="{{ pub.venue_full }}">{{ pub.venue }} {{ pub.year }}</span>
+    {%- if pub.award %}
+      <span class="badge badge--award">{% include icon.html name="star" %}{{ pub.award }}</span>
+    {%- endif -%}
+  </div>
+
+  <h3 class="pub__title">{{ pub.title }}</h3>
+  <p class="pub__authors">{{ byline }}</p>
+
+  {%- if highlight and pub.note %}
+    <p class="pub__note">{{ pub.note }}</p>
+  {%- elsif pub.note_plain %}
+    <p class="pub__note">{{ pub.note_plain }}</p>
+  {%- endif -%}
+
+  {%- if pub.links %}
+    <div class="pub__links">
+      {%- for link in pub.links -%}
+        <a class="btn btn--sm" href="{{ link.url | relative_url }}"
+           {% unless link.url contains '/documents/' %}target="_blank" rel="noopener"{% endunless %}>
+          {% include icon.html name=link.icon %}
+          <span>{{ link.label }}</span>
+        </a>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+</article>

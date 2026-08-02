@@ -1,0 +1,36 @@
+// ---------------------------------------------------------------------------
+// Rouge syntax highlighting — token colours derived from the site palette so
+// code blocks sit in the same warm family in both themes.
+// ---------------------------------------------------------------------------
+
+.highlight {
+  background: none;
+
+  .c, .cm, .c1, .cs, .cd  { color: var(--text-faint); font-style: italic; }
+  .k, .kd, .kn, .kp, .kr, .kt, .kc { color: var(--accent); font-weight: 600; }
+  .o, .ow { color: var(--text-muted); }
+  .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx, .sr { color: #2f7d5c; }
+  .m, .mf, .mh, .mi, .mo, .il { color: #7a5cc4; }
+  .n, .na, .nb, .nc, .nd, .nf, .ni, .nl, .nn, .no, .nt, .nv, .py { color: var(--text); }
+  .nf, .nc { font-weight: 600; }
+  .nb, .bp { color: #b0761d; }
+  .err { color: #c0392b; }
+  .gd { color: #c0392b; }
+  .gi { color: #2f7d5c; }
+}
+
+@mixin syntax-dark {
+  .highlight {
+    .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx, .sr { color: #86c9a4; }
+    .m, .mf, .mh, .mi, .mo, .il { color: #b79cf0; }
+    .nb, .bp { color: #d8b166; }
+    .err, .gd { color: #e7796b; }
+    .gi { color: #86c9a4; }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { @include syntax-dark; }
+}
+
+:root[data-theme="dark"] { @include syntax-dark; }

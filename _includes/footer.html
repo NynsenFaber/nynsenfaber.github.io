@@ -1,0 +1,22 @@
+<footer class="site-footer">
+  <div class="wrap wrap--wide site-footer__inner">
+    <p class="site-footer__name">{{ site.profile.name }}</p>
+
+    <ul class="site-footer__links">
+      {%- for link in site.links -%}
+        <li>
+          <a class="icon-link" href="{{ link.url | relative_url }}"
+             {% unless link.url contains 'mailto:' or link.url contains '/documents/' %}target="_blank" rel="noopener"{% endunless %}>
+            {% include icon.html name=link.icon %}
+            <span>{{ link.short }}</span>
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
+
+    <p class="site-footer__meta">
+      © {{ 'now' | date: "%Y" }} · {{ site.profile.location }} ·
+      <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+    </p>
+  </div>
+</footer>

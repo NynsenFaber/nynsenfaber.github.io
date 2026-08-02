@@ -1,0 +1,186 @@
+# ---------------------------------------------------------------------------
+# Single source of truth for every publication on the site.
+# The research page groups these by `type`; the home page shows the ones
+# flagged `featured: true`. Adding a paper anywhere means adding it here only.
+#
+# Order matters: entries appear in the order written here, newest first.
+#
+# type:      conference | journal | workshop | project | thesis
+# featured:  true  -> highlighted card, and surfaced on the home page
+# award:     optional ribbon (e.g. "Spotlight")
+# note:      one line on why the work matters (shown on featured cards only)
+# links:     label + url + icon (icon: paper | code | video | slides)
+# ---------------------------------------------------------------------------
+
+- title: "Piquantε: Private Quantile Estimation in the Two-Server Model"
+  authors: "Hannah Keller, Jacob Imola, Fabrizio Boninsegna, Rasmus Pagh, Amrita Roy Chowdhury"
+  venue: CCS
+  venue_full: ACM Conference on Computer and Communications Security
+  year: 2026
+  type: conference
+  links:
+    - label: Paper
+      url: https://arxiv.org/abs/2509.14035
+      icon: paper
+
+- title: "Differentially Private Quantiles with Smaller Error"
+  authors: "Jacob Imola, Fabrizio Boninsegna, Hannah Keller, Anders Aamand, Amrita Roy Chowdhury, Rasmus Pagh"
+  venue: NeurIPS
+  venue_full: Conference on Neural Information Processing Systems
+  year: 2025
+  type: conference
+  featured: true
+  note: >-
+    Improves the error of private quantile estimation in the central model,
+    with matching lower bounds.
+  links:
+    - label: Paper
+      url: https://arxiv.org/abs/2505.13662
+      icon: paper
+    - label: Code
+      url: https://github.com/NynsenFaber/DP_CC_quantiles
+      icon: code
+
+- title: "Lightweight Protocols for Distributed Private Quantile Estimation"
+  authors: "Anders Aamand, Fabrizio Boninsegna, Abigail Gentle, Jacob Imola, Rasmus Pagh"
+  venue: ICML
+  venue_full: International Conference on Machine Learning
+  year: 2025
+  type: conference
+  featured: true
+  award: Spotlight
+  note: >-
+    Adaptive local-DP protocols that estimate quantiles across many users with
+    only a handful of bits sent per user.
+  links:
+    - label: Paper
+      url: https://arxiv.org/abs/2502.02990
+      icon: paper
+    - label: Code
+      url: https://github.com/NynsenFaber/Quantile_estimation_with_adaptive_LDP
+      icon: code
+    - label: Talk
+      url: https://icml.cc/virtual/2025/poster/43483
+      icon: video
+
+- title: "Differentially Private Release of Hierarchical Origin/Destination Data with a TopDown Approach"
+  authors: "Fabrizio Boninsegna, Francesco Silvestri"
+  venue: PETS
+  venue_full: Privacy Enhancing Technologies Symposium
+  year: 2025
+  type: conference
+  links:
+    - label: Paper
+      url: https://petsymposium.org/popets/2025/popets-2025-0087.pdf
+      icon: paper
+    - label: Code
+      url: https://github.com/aidaLabDEI/TDA_hierarchical
+      icon: code
+
+- title: "Differentially Private High-Dimensional Approximate Range Counting, Revisited"
+  authors: "Martin Aumüller, Fabrizio Boninsegna, Francesco Silvestri"
+  venue: FORC
+  venue_full: Symposium on Foundations of Responsible Computing
+  year: 2025
+  type: conference
+  links:
+    - label: Paper
+      url: https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.FORC.2025.15
+      icon: paper
+    - label: Code
+      url: https://github.com/NynsenFaber/private_approximate_nearest_neighbor_counting
+      icon: code
+
+- title: "Locality Sensitive Hashing of Trajectories Under Local Differential Privacy"
+  authors: "Fabrizio Boninsegna"
+  venue: SEBD
+  venue_full: Symposium on Advanced Database Systems
+  year: 2023
+  type: conference
+  links:
+    - label: Paper
+      url: https://ceur-ws.org/Vol-3478/paper56.pdf
+      icon: paper
+
+- title: "Towards a Fair and Comprehensive Evaluation of Walkable Accessibility and Attractivity in the 15 Min City Scenario Based on Demographic Data"
+  authors: "Fabrizio Boninsegna, Alessandro Nalin, Andrea Simone, Bruno Zamengo, Denis Cappellari, Francesco Silvestri"
+  venue: Infrastructures
+  venue_full: Infrastructures (MDPI)
+  year: 2026
+  type: journal
+  links:
+    - label: Paper
+      url: https://www.mdpi.com/2412-3811/11/1/4
+      icon: paper
+
+- title: "InfTDA: a Simple TopDown Mechanism for Hierarchical Differentially Private Counting Queries"
+  authors: "Fabrizio Boninsegna"
+  venue: TPDP
+  venue_full: Workshop on Theory and Practice of Differential Privacy
+  year: 2025
+  type: workshop
+  links:
+    - label: Paper
+      url: https://arxiv.org/abs/2505.05347
+      icon: paper
+    - label: Code
+      url: https://github.com/NynsenFaber/InfTDA_py
+      icon: code
+
+- title: "Private Quantile Estimation in the Two Server Model"
+  authors: "Jacob Imola, Fabrizio Boninsegna, Hannah Keller, Anders Aamand, Amrita Roy Chowdhury, Rasmus Pagh"
+  venue: TPDP
+  venue_full: Workshop on Theory and Practice of Differential Privacy
+  year: 2025
+  type: workshop
+  links:
+    - label: Paper
+      url: /documents/MPC.pdf
+      icon: paper
+
+- title: "The Privacy Analysis of the Differentially Private Stochastic Gradient Descent"
+  authors: "Fabrizio Boninsegna"
+  venue: Project
+  venue_full: PhD course on Information Theoretic Models in Security, University of Padova
+  year: 2024
+  type: project
+  note_plain: >-
+    A survey of the state of the art in differentially private deep learning,
+    written for a PhD course on Information Theoretic Models in Security.
+  links:
+    - label: Report
+      url: /documents/The_Privacy_Analysis_of_the_Differential_Private_Stochastic_Gradient_Descent.pdf
+      icon: paper
+
+- title: "Differentially Private Methods for Data Release, Similarity Search and Quantile Estimation"
+  authors: "Fabrizio Boninsegna"
+  venue: PhD Thesis
+  venue_full: PhD Thesis in Information Engineering, University of Padova
+  year: 2026
+  type: thesis
+  links:
+    - label: Thesis
+      url: https://www.research.unipd.it/bitstream/11577/3583528/2/thesis_Fabrizio_Boninsegna.pdf
+      icon: paper
+
+- title: "Problems of Ranking and Dynamics of Complex Bipartite Networks"
+  authors: "Fabrizio Boninsegna"
+  venue: MSc Thesis
+  venue_full: MSc Thesis in Theoretical Physics, University of Padova
+  year: 2022
+  type: thesis
+  links:
+    - label: Thesis
+      url: https://thesis.unipd.it/handle/20.500.12608/28558
+      icon: paper
+
+- title: "Solitoni in Fluidi Classici e Quantistici"
+  authors: "Fabrizio Boninsegna"
+  venue: BSc Thesis
+  venue_full: BSc Thesis in Physics, University of Padova
+  year: 2019
+  type: thesis
+  links:
+    - label: Thesis
+      url: https://thesis.unipd.it/handle/20.500.12608/24278
+      icon: paper
