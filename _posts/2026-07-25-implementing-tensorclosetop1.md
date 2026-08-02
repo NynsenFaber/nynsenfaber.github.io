@@ -50,7 +50,7 @@ point close enough," and sub-linear query time in high dimension becomes possibl
 
 The definition of $$(α, β)$$-ANNC is similar but it does not require the existence of the green points: **count any green point, may or maynot count any yellow point, but definetly do not count the red points**. That is, any number greather than the number of green points, and smaller than the number of green and yellow points, satisfies the query. This query can be effectivetly answered privatley using differential privacy!
 
-## The idea, in one more paragraph
+## The idea
 
 The tool is **locality-sensitive filters**. Draw a bunch of random Gaussian vectors
 and call them filters. A point gets parked at a filter when the two align well —
