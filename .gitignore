@@ -5,3 +5,6 @@ vendor
 .idea
 _site/
 README.md
+.claude/
+
+documents/blogs
