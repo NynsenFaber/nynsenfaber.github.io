@@ -18,10 +18,8 @@ It is a technique based on *hashing*, which is a mathematical process to transfo
 > Let $$(\mathcal{X}, d)$$ be a metric space, and fix two distances $$r_1 < r_2$$ and two probabilities $$p_1 > p_2$$. A family of functions $$\mathcal{H} = \{h : \mathcal{X} \to U\}$$ is called $$(r_1, r_2, p_1, p_2)$$-*sensitive* if, for every pair of points $$x, y \in \mathcal{X}$$ and $$h$$ drawn uniformly at random from $$\mathcal{H}$$:
 >
 > $$
-> \begin{aligned}
-> d(x,y) \le r_1 &\implies \Pr[h(x) = h(y)] \ge p_1 \\[4pt]
-> d(x,y) \ge r_2 &\implies \Pr[h(x) = h(y)] \le p_2
-> \end{aligned}
+> d(x,y) \le r_1 \implies \Pr[h(x) = h(y)] \ge p_1\\
+> d(x,y) \ge r_2 \implies \Pr[h(x) = h(y)] \le p_2
 > $$
 
 Intuitively, we are looking for a family of functions such that, by randomly sampling a hash function from this family, close points share the same hash (same bucket) with probability at least $$p_1$$ while far points do with probability at most $$p_2$$. We are bounding the probability of the best and worst case scenarios.
