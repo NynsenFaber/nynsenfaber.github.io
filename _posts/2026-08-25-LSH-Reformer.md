@@ -107,7 +107,7 @@ The first part of the problem is more subtle to solve, and it is easier to under
 
 The whole thing becomes four steps:
 
-1. **Hash** every position. $$L$$ hashes at $$O(d\log d)$$ each with the Fast Hadamard Transform.
+1. **Hash** every position. $$L$$ hashes at $$O(b\log b)$$ each with the Fast Hadamard Transform.
 2. **Sort** positions by the pair (bucket id, sequence id) at $$O(L \log L)$$.
 3. **Chunk**. Cut the sorted sequence into blocks of $$m$$ consecutive positions. Each block attends to itself and to the one before it. Reformer sets $$m = 2L/n_{\text{buckets}}$$.
 4. **Repeat** with $$n_{\text{rounds}}$$ independent hash functions, taking the union $$P_i = \bigcup_r P_i^{(r)}$$.
@@ -118,9 +118,9 @@ Adding it up:
 
 | Step | Cost |
 | --- | --- |
-| Hash | $$O(L\, d\log d)$$ |
+| Hash | $$O(L\, b\log b)$$ |
 | Sort by bucket | $$O(L\log L)$$ |
-| Chunked attention | $$O(L\, m)$$, with $$m$$ constant by construction |
+| Chunked attention | $$O(d_k L\, m)$$, with $$m$$ constant by construction |
 
 The chunk size is where the quadratic term goes to die. Reformer picks $$n_{\text{buckets}} = L/32$$ so $$m=64$$. The sorting step introduces the $$O(L\log L)$$.
 
